@@ -11,3 +11,12 @@ header:
       url: "#test-link"
 excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
 ---
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
+
+{% include feature_row id="feature_row_left" type="left" %}
+
+{% include feature_row id="feature_row_center" type="right" %}
+
+{% include feature_row id="feature_row_center" type="center" %}
