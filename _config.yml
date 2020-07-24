@@ -35,6 +35,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+  - _layout
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -57,23 +58,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
 
 footer:
   links:
@@ -93,8 +77,8 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
+      layout: splash
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -104,8 +88,8 @@ defaults:
       path: "_pages"
       type: pages
     values:
-      layout: single
-      author_profile: true
+      layout: splash
+      author_profile: false
 
 category_archive:
   type: liquid
